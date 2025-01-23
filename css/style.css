@@ -130,16 +130,16 @@ h6 {
 }
 
 .choose {
-  width: 400px;
+  width: 100%;
 }
 
 .facility {
-  width: 400px;
+  width: 100%;
   height: 600px;
 }
 
 .infra {
-  width: 400px;
+  width: 100%;
   height: 600px;
 }
 

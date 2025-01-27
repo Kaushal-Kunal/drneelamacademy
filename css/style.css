@@ -95,7 +95,7 @@ h6 {
 
 .vid {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  /* min-height: calc(100vh - 100px); */
   overflow: hidden;
 }
 
@@ -111,6 +111,13 @@ h6 {
   /* position: absolute; */
   margin-left: 20px;
   margin-top: -8px;
+}
+
+.icons{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  object-fit: cover;
 }
 
 @media screen and (max-width:990px) {
@@ -138,6 +145,7 @@ h6 {
 
 .choose {
   width: 100%;
+  height: 730px;
 }
 
 .facility {
@@ -162,7 +170,7 @@ ul li {
   position: absolute;
   z-index: 1000;
   background: none;
-  gap: 10%;
+  gap: 5%;
   display: flex;
   justify-content: flex-start;
   background-color: #0000002a;
@@ -171,7 +179,7 @@ ul li {
 @media screen and (max-width:996px) {
   .menu {
     justify-content: space-between;
-    background-color: #000000dc;
+    background-color: #00000052;
   }
 }
 
@@ -184,9 +192,9 @@ ul li {
 
 .media {
   width: auto;
-  padding: 20px;
+  padding: 16px;
   position: absolute;
-  top: 20%;
+  top: 18%;
   right: 0;
   background: none;
   display: flex;
@@ -194,14 +202,31 @@ ul li {
   flex-direction: column;
   background-color: #092d3359;
 }
+@media screen and (max-width:990px){
+  .media{
+    top: 16.7%;
+  }
+}
 
 .media i {
-  margin-top: 18px;
+  margin-top: 0px;
   color: rgb(176, 192, 201);
   z-index: 1000;
   font-size: 1.5rem;
 }
 
+
+/* image larger */
+.team-img img {
+  transition: transform 0.3s ease;
+}
+
+.team-img:hover img {
+  transform: scale(1.1);
+}
+
+
+/* image larger */
 
 .transparent {
   position: absolute;
@@ -8780,7 +8805,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 2rem !important;
+  padding-top: 3rem !important;
 }
 
 .pr-5,

@@ -41,6 +41,26 @@
         loop: true,
         items: 1
     });
+
+
+    $(document).ready(function() {
+        // When the image is clicked
+        $('.zoomable').click(function() {
+            var imgSrc = $(this).attr('src'); // Get the image source
+            var overlay = $('<div class="zoomed-in-overlay"></div>');
+            var expandedImg = $('<img class="zoomed-in" src="' + imgSrc + '" />');
+            
+            // Append overlay and expanded image to body
+            $('body').append(overlay).append(expandedImg);
+            
+            // Remove overlay and image when clicked
+            overlay.add(expandedImg).click(function() {
+                expandedImg.remove();
+                overlay.remove();
+            });
+        });
+    });
+    
     
 })(jQuery);
 

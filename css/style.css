@@ -5,6 +5,16 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.bg-custom {
+  background-color: #17303b;
+}
+
+.customPhoto:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -113,7 +123,7 @@ h6 {
   margin-top: -8px;
 }
 
-.icons{
+.icons {
   width: 30px;
   height: 30px;
   margin-top: 10px;
@@ -121,7 +131,7 @@ h6 {
 }
 
 @media screen and (max-width:990px) {
-  .web-logo{
+  .web-logo {
     display: none;
     background-color: red;
   }
@@ -193,7 +203,7 @@ ul li {
 .media {
   width: auto;
   padding: 16px;
-  position: absolute;
+  position: fixed;
   top: 18%;
   right: 0;
   background: none;
@@ -201,9 +211,11 @@ ul li {
   justify-content: center;
   flex-direction: column;
   background-color: #092d3359;
+  z-index: 5;
 }
-@media screen and (max-width:990px){
-  .media{
+
+@media screen and (max-width:990px) {
+  .media {
     top: 16.5%;
   }
 }
@@ -233,7 +245,8 @@ ul li {
   height: 50%;
   min-width: 300px;
   min-width: 300px;
-  object-fit: contain;  /* Keeps aspect ratio while filling the screen */
+  object-fit: contain;
+  /* Keeps aspect ratio while filling the screen */
   z-index: 9999;
   transform: translate(-50%, -50%);
 }
@@ -269,7 +282,20 @@ ul li {
   white-space: normal;
   font-size: 15px;
 }
-
+.testimonial-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 15px;
+}
+.testimonial-text:hover {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+  white-space: normal;
+}
 p {
   margin-top: 0;
   margin-bottom: 1rem;
